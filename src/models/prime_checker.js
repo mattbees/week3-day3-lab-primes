@@ -13,11 +13,11 @@ class PrimeChecker {
 // Why isn't this logging out??
   primeChecker(input) {
     let result = this.checkValidNum(input);
-    if (result) {
+    if (input > 1) {
       result = this.checkPrime(input);
     };
     if (result) {
-      console.log('This is a prime number.');
+      return 'This is a prime number.';
     } else {
       return 'This is not a prime number.';
     }
